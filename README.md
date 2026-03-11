@@ -32,3 +32,51 @@ PROC FCMP OUTLIB=libref.table.package;
 
       ENDSUB;
 QUIT;
+
+## Syntax Components Explained
+
+### OUTLIB = libref.dataset.package
+Specifies where the compiled function is stored.
+
+- **libref** → Library name  
+- **dataset** → Dataset storing functions  
+- **package** → Function group name  
+
+*Required option in PROC FCMP.*
+
+---
+
+### FUNCTION Statement
+
+Defines the function name, arguments, and return type.
+
+**Syntax:**
+
+FUNCTION function_name(arguments) <$> <length>;
+
+- **function_name** → Custom function name  
+- **arguments** → Input parameters  
+- **$** → Character return type (default numeric)  
+- **length** → Length of character return value  
+
+Example:
+
+FUNCTION fullname(first $, last $) $50;
+
+---
+
+### RETURN Statement
+
+Specifies the value returned by the function.
+
+RETURN(expression);
+
+*Every function must contain a RETURN statement.*
+
+---
+
+### ENDSUB Statement
+
+Marks the end of the function definition.
+
+ENDSUB;
