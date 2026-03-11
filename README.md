@@ -91,3 +91,27 @@ After creating a function using PROC FCMP, it must be made available before it c
 
 ```sas
 options cmplib = libref.dataset;
+```
+
+**"After enabling the CMPLIB option, the custom function can be used just like any built-in SAS function, allowing the same logic to be reused across DATA steps, PROC steps, and other SAS workflows."**
+```sas
+PROC FCMP OUTLIB=work.functions.math;
+
+FUNCTION square(x);
+   RETURN(x*x);
+ENDSUB;
+
+QUIT;
+
+/* Enable custom functions */
+options cmplib=work.functions;
+
+/* Using the function like a built-in SAS function */
+data example;
+
+x = 8;
+
+y = square(x);
+
+run;
+```
