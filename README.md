@@ -32,6 +32,7 @@ PROC FCMP OUTLIB=libref.table.package;
 
       ENDSUB;
 QUIT;
+```
 
 ## Syntax Components Explained
 
