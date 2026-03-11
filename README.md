@@ -115,3 +115,34 @@ y = square(x);
 
 run;
 ```
+
+## Using PROC FCMP Functions Inside Other Functions
+
+PROC FCMP supports modular programming by allowing user-defined functions to call other user-defined functions. This helps break complex logic into smaller reusable components.
+
+Example:
+
+```sas
+PROC FCMP OUTLIB=work.functions.math;
+
+FUNCTION square(x);
+   RETURN(x*x);
+ENDSUB;
+
+FUNCTION cube(x);
+   RETURN(x*square(x));   /* Calling another FCMP function */
+ENDSUB;
+
+QUIT;
+
+options cmplib=work.functions;
+
+data example;
+
+x = 4;
+
+sq = square(x);
+
+cb = cube(x);
+
+run;
