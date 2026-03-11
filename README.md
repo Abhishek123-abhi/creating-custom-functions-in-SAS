@@ -7,3 +7,13 @@
 In many SAS programs, developers frequently encounter situations where the same logic must be implemented repeatedly, whether for routine calculations, standardized business rules, or commonly used data transformations. As projects grow, this repetition can make programs harder to maintain, less consistent, and more difficult to scale.
 
 **PROC FCMP** addresses this challenge by enabling programmers to encapsulate such logic into reusable functions and subroutines. This promotes a more structured programming approach, improves code readability, and supports consistency across projects. Whether working in healthcare, finance, research, or any data-driven domain, this ability to build reusable components helps streamline workflows and encourages more efficient and maintainable SAS programming practices.
+
+## PROC FCMP Workflow
+A typical PROC FCMP workflow follows these steps:
+**Create the function → Store it in a library → Enable CMPLIB → Use it like a built-in function**
+
+**Steps involved:**
+- Define the function using PROC FCMP
+- Store the compiled function using the OUTLIB option
+- Enable access using the OPTIONS CMPLIB statement
+- Call the function inside DATA steps like any standard SAS function
