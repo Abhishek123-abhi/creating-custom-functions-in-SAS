@@ -174,22 +174,22 @@ Although both PROC FCMP and SAS Macros improve reusability, they address differe
 | Programming concept | Similar to functions in R/Python | Similar to code templates |
 | Return behavior | Returns computed values | Produces SAS code |
 
-
-### When to use PROC FCMP
-Use PROC FCMP when you need:
-- Reusable calculations
-- Data transformation logic
-- Validation functions
-- Statistical utilities
-
-### When to use Macros
-Use macros when you need:
-- Dynamic code generation
-- Repetitive PROC execution
-- Parameterized programs
-- Workflow automation
-
-### Key takeaway
-
 **Use PROC FCMP for reusable logic.  
 Use Macros for reusable code.**
+
+
+### Where PROC FCMP Functions Can Be Used
+
+Once enabled through the `CMPLIB` option, PROC FCMP functions can be used anywhere SAS functions are supported.
+
+Common usage areas include:
+
+- DATA steps
+- PROC SQL
+- PROC REPORT
+- PROC FREQ
+- PROC PRINT
+- Other procedures supporting functions
+
+
+
