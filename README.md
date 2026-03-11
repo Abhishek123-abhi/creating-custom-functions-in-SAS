@@ -17,3 +17,11 @@ A typical PROC FCMP workflow follows these steps:
 - Store the compiled function using the OUTLIB option
 - Enable access using the OPTIONS CMPLIB statement
 - Call the function inside DATA steps like any standard SAS function
+
+## Syntax:
+**PROC FCMP OUTLIB=libref.table.package;
+FUNCTION function-name(arguments)<$> <length>;
+. . . programming statements. . .
+RETURN(expression);
+ENDSUB;
+QUIT;**
