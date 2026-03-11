@@ -150,9 +150,6 @@ run;
 ```
 
 
----
-
-```markdown
 
 ## PROC FCMP vs SAS Macro
 
