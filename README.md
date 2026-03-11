@@ -81,3 +81,13 @@ RETURN(expression);
 Marks the end of the function definition.
 
 ENDSUB;
+
+
+## Making the Function Available (CMPLIB Option)
+
+After creating a function using PROC FCMP, it must be made available before it can be used in a DATA step. This is done using the **CMPLIB** system option.
+
+**Syntax:**
+
+```sas
+options cmplib = libref.dataset;
