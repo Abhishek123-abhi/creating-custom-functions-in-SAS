@@ -194,11 +194,11 @@ Common usage areas include:
 
 ## Conclusion
 
-PROC FCMP is a powerful yet often underutilized SAS feature that enables programmers to build reusable, modular functions and subroutines. By encapsulating repeated logic into custom functions, programmers can improve code readability, maintainability, and overall efficiency. :contentReference[oaicite:0]{index=0}
+PROC FCMP is a powerful yet often underutilized SAS feature that enables programmers to build reusable, modular functions and subroutines. By encapsulating repeated logic into custom functions, programmers can improve code readability, maintainability, and overall efficiency.
 
-Understanding PROC FCMP adds another important tool to a SAS programmer’s toolkit, complementing traditional approaches like macros while promoting modern modular programming practices.
+Understanding PROC FCMP adds another important tool to a SAS programmer’s toolkit, complementing approaches like macros while promoting modular programming practices.
 
 This repository covers the foundational concepts of PROC FCMP. Further practical implementations and advanced examples will be demonstrated in the accompanying SAS programs.
 
-**To be continued in SAS program examples…**
+**To be continued in SAS program examples...**
 
