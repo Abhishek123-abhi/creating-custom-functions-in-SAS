@@ -10,7 +10,7 @@ In many SAS programs, developers frequently encounter situations where the same 
 
 ## PROC FCMP Workflow
 A typical PROC FCMP workflow follows these steps:
-**Create the function → Store it in a library → Enable CMPLIB → Use it like a built-in function**
+```Create the function → Store it in a library → Enable CMPLIB → Use it like a built-in function
 
 **Steps involved:**
 - Define the function using PROC FCMP
