@@ -153,17 +153,30 @@ run;
 ---
 
 ```markdown
+
 ## PROC FCMP vs SAS Macro
 
-Although both PROC FCMP and SAS Macros improve code reusability, they serve different purposes.
+Although both PROC FCMP and SAS Macros improve reusability, they address different aspects of SAS programming.
 
-| PROC FCMP | SAS Macro |
-|-----------|-----------|
-| Creates reusable functions | Generates reusable SAS code |
-| Works during execution phase | Works during compilation phase |
-| Operates on data values | Operates on SAS code text |
-| Called like SAS functions | Called using macro syntax |
-| Best for calculations | Best for automation |
+### Conceptual Difference
+
+**PROC FCMP → Reusable logic (functions)**  
+**SAS Macro → Reusable code (automation)**
+
+---
+
+### Key Differences Between PROC FCMP and SAS Macro
+
+| Aspect | PROC FCMP (Function Compiler) | SAS Macro Facility |
+|--------|--------------------------------|--------------------|
+| Primary role | Creates user-defined functions | Generates reusable SAS code |
+| Programming level | Works at data value level | Works at program text level |
+| Execution timing | Executes during DATA step runtime | Resolves during compile phase |
+| How it is used | Called like built-in SAS functions | Invoked using macro calls |
+| Typical usage | Calculations, derivations, transformations | Automation, looping, dynamic programs |
+| Programming concept | Similar to functions in R/Python | Similar to code templates |
+| Return behavior | Returns computed values | Produces SAS code |
+
 
 ### When to use PROC FCMP
 Use PROC FCMP when you need:
