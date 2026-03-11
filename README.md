@@ -23,11 +23,11 @@ A typical PROC FCMP workflow follows these steps:
 
 ```sas
 PROC FCMP OUTLIB=libref.table.package;
-FUNCTION function_name(arguments) <$> <length>;
+     FUNCTION function_name(arguments) <$> <length>;
 
-   /* programming statements */
+              /* programming statements */
 
-RETURN(expression);
+            RETURN(expression);
 
-ENDSUB;
+      ENDSUB;
 QUIT;
