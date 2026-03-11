@@ -146,3 +146,40 @@ sq = square(x);
 cb = cube(x);
 
 run;
+
+```
+
+
+---
+
+```markdown
+## PROC FCMP vs SAS Macro
+
+Although both PROC FCMP and SAS Macros improve code reusability, they serve different purposes.
+
+| PROC FCMP | SAS Macro |
+|-----------|-----------|
+| Creates reusable functions | Generates reusable SAS code |
+| Works during execution phase | Works during compilation phase |
+| Operates on data values | Operates on SAS code text |
+| Called like SAS functions | Called using macro syntax |
+| Best for calculations | Best for automation |
+
+### When to use PROC FCMP
+Use PROC FCMP when you need:
+- Reusable calculations
+- Data transformation logic
+- Validation functions
+- Statistical utilities
+
+### When to use Macros
+Use macros when you need:
+- Dynamic code generation
+- Repetitive PROC execution
+- Parameterized programs
+- Workflow automation
+
+### Key takeaway
+
+**Use PROC FCMP for reusable logic.  
+Use Macros for reusable code.**
